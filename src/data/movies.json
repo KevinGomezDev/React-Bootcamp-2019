@@ -4,6 +4,7 @@
         "title": "Avengers Endgame",
         "year": "2019",
         "image": "https://image.tmdb.org/t/p/original/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+        "genre": "horror",
         "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store."
     },
     {
@@ -17,6 +18,7 @@
         "id": 1003,
         "title": "Ant-Man and the Wasp",
         "year": "2018",
+        "genre": "drama",
         "image": "https://image.tmdb.org/t/p/original/eivQmS3wqzqnQWILHLc4FsEfcXP.jpg",
         "overview": "Just when his time under house arrest is about to end, Scott Lang once again puts his freedom at risk to help Hope van Dyne and Dr. Hank Pym dive into the quantum realm and try to accomplish, against time and any chance of success, a very dangerous rescue mission."
     }]

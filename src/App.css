@@ -51,6 +51,17 @@
   font-size: 20px;
 }
 
+.close-button {
+  cursor: pointer;
+  background: transparent;
+  color: red;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+}
+
 .checked {
   color: orange;
 }
