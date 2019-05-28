@@ -66,6 +66,18 @@
   color: orange;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.form input {
+  margin: 5px;
+}
+
 @media (max-width: 980px) {
   .content {
     flex-direction: column;
