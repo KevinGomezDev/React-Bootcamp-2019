@@ -1,80 +1,93 @@
- *, html {
-   box-sizing: border-box;
+ *,
+ html {
+     box-sizing: border-box;
  }
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.movie-container {
-  border: 1px solid azure;
-  color: azure;
-  padding: 20px;
-  text-align: center;
-  margin: 5px;
-  width: 32.22%;
-}
-
-.overview-container {
-  display: flex;
-  text-align: justify;
-}
-
-.overview-img {
-  max-width: 200px;
-  max-height: 300px;
-  margin: 20px;
-}
-
-.main-title {
-  text-align: center;
-  color: azure;
-  font-size: 4em;
-}
-
-.favourite-container {
-  position: relative;
-}
-
-.favourite-star {
-  color: azure;
-}
-
-.favourite-button {
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  outline: 0;
-  position: absolute;
-  right: 0;
-  font-size: 20px;
-}
-
-.close-button {
-  cursor: pointer;
-  background: transparent;
-  color: red;
-  border: 0;
-  outline: 0;
-  position: absolute;
-  left: 0;
-  font-size: 20px;
-}
-
-.checked {
-  color: orange;
-}
-
-@media (max-width: 980px) {
-  .content {
-    flex-direction: column;
-  }
-  .overview-container {
-    align-items: center;
-    flex-direction: column;
-  }
-  .movie-container { 
-    width: 100%;
-  }
-}
+ 
+ .content {
+     display: flex;
+     flex-wrap: wrap;
+ }
+ 
+ .movie-container {
+     border: 1px solid azure;
+     color: azure;
+     padding: 20px;
+     text-align: center;
+     margin: 5px;
+     width: 32.22%;
+ }
+ 
+ .overview-container {
+     display: flex;
+     text-align: justify;
+ }
+ 
+ .overview-img {
+     max-width: 200px;
+     max-height: 300px;
+     margin: 20px;
+ }
+ 
+ .main-title {
+     text-align: center;
+     color: azure;
+     font-size: 4em;
+ }
+ 
+ .favourite-container {
+     position: relative;
+ }
+ 
+ .favourite-star {
+     color: azure;
+ }
+ 
+ .favourite-button {
+     cursor: pointer;
+     background: transparent;
+     border: 0;
+     outline: 0;
+     position: absolute;
+     right: 0;
+     font-size: 20px;
+ }
+ 
+ .close-button {
+     cursor: pointer;
+     background: transparent;
+     color: red;
+     border: 0;
+     outline: 0;
+     position: absolute;
+     left: 0;
+     font-size: 20px;
+ }
+ 
+ .checked {
+     color: orange;
+ }
+ 
+ .form {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     margin: 0 auto;
+     max-width: 300px;
+ }
+ 
+ .form input {
+     margin: 5px;
+ }
+ 
+ @media (max-width: 980px) {
+     .content {
+         flex-direction: column;
+     }
+     .overview-container {
+         align-items: center;
+         flex-direction: column;
+     }
+     .movie-container {
+         width: 50%;
+     }
+ }
