@@ -30,7 +30,7 @@ class Home extends React.Component {
         return <MainLayout>
           <Redirect to='/add' />
           {movies.map((movie) => 
-           <MovieCard style={{borderRadius: '' }}deleteMovie={this.deleteMovie} key={movie.id} {...movie} />
+           <MovieCard deleteMovie={this.deleteMovie} key={movie.id} {...movie} />
           )}
         </MainLayout>
     }
