@@ -1,8 +1,10 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom'
 import moviesData from '../data/movies.json'
 
+
+import MainLayout from '../layouts/MainLayout'
 import MovieCard from '../components/MovieCard'
-import MovieForm from '../components/MovieForm'
 
 class Home extends React.Component {
   state = {
@@ -25,13 +27,12 @@ class Home extends React.Component {
 
     render() {
         const { movies } = this.state
-        return <div>
-        <h1 className='main-title'>Movie App</h1>
-        <MovieForm onAddMovie={this.addMovie} />
-        <div className='content'>
-          {movies.map((movie) => <MovieCard deleteMovie={this.deleteMovie} key={movie.id} {...movie} />)}
-        </div>
-      </div>
+        return <MainLayout>
+          <Redirect to='/add' />
+          {movies.map((movie) => 
+           <MovieCard style={{borderRadius: '' }}deleteMovie={this.deleteMovie} key={movie.id} {...movie} />
+          )}
+        </MainLayout>
     }
 }
 

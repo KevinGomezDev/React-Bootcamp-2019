@@ -1,5 +1,5 @@
 import React from 'react'
-import { API_KEY } from '../constants/movies'
+import MainLayout from '../layouts/MainLayout'
 
 class MovieForm extends React.Component {
     constructor (props) {
@@ -37,7 +37,9 @@ class MovieForm extends React.Component {
     }
 
     render() {
-        return <form className='form' onSubmit={this.handleSubmit}>
+        console.log(this.props.match.params.id)
+        return <MainLayout>
+         <form className='form' onSubmit={this.handleSubmit}>
             <input value={this.state.id} name='id' placeholder='id' onChange={this.handleChange} />
             <input value={this.state.title} name='title' placeholder='name' onChange={this.handleChange} />
             <input ref={this.yearRef} value={this.state.year} name='year' placeholder='year' onChange={this.handleChange} />
@@ -45,7 +47,8 @@ class MovieForm extends React.Component {
             <input value={this.state.genre} name='genre' placeholder='genre' onChange={this.handleChange} />
             <input value={this.state.overview} name='overview' placeholder='overview' onChange={this.handleChange} />
             <input type='submit' value="Save" />
-        </form>
+         </form>
+        </MainLayout>
     }
 
 }
