@@ -1,5 +1,4 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom'
 import moviesData from '../data/movies.json'
 
 
@@ -28,7 +27,6 @@ class Home extends React.Component {
     render() {
         const { movies } = this.state
         return <MainLayout>
-          <Redirect to='/add' />
           {movies.map((movie) => 
            <MovieCard deleteMovie={this.deleteMovie} key={movie.id} {...movie} />
           )}

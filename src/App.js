@@ -20,8 +20,8 @@ function Routes () {
 }
 
 function App () {
-    <Router>
-        {isAuth ? <Routes /> : <PrivatesRoutes />}
+    return <Router>
+        <Routes />
     </Router>
 }
 
