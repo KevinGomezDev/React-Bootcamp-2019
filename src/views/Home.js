@@ -50,6 +50,7 @@ class Home extends React.Component {
         <a href="/add">movie</a>
         {movies.map(movie => (
           <MovieCard deleteMovie={this.deleteMovie} key={movie.id} {...movie} />
+          
         ))}
       </MainLayout>
     );
