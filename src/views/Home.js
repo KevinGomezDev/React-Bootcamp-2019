@@ -26,11 +26,11 @@ class Home extends React.Component {
 
     render() {
         const { movies } = this.state
-        return <MainLayout>
+        return<MainLayout>
           {movies.map((movie) => 
            <MovieCard deleteMovie={this.deleteMovie} key={movie.id} {...movie} />
           )}
-        </MainLayout>
+          </MainLayout>
     }
 }
 
