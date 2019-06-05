@@ -42,7 +42,7 @@ class Home extends React.Component {
           {movies.map((movie) => 
            <MovieCard deleteMovie={this.deleteMovie} key={movie.id} {...movie} />
           )}
-        </MainLayout>
+          </MainLayout>
     }
 }
 
