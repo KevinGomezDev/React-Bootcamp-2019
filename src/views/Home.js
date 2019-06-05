@@ -37,12 +37,14 @@ class Home extends React.Component {
 
     render() {
         const { movies } = this.state
-        return <MainLayout>
+        return <div>
           <WelcomeText isAuth={this.context.isAuth} name={this.context.name} />
-          {movies.map((movie) => 
-           <MovieCard deleteMovie={this.deleteMovie} key={movie.id} {...movie} />
-          )}
+          <MainLayout>
+            {movies.map((movie) => 
+            <MovieCard deleteMovie={this.deleteMovie} key={movie.id} {...movie} />
+            )}
           </MainLayout>
+          </div>
     }
 }
 
