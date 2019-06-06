@@ -1,0 +1,1 @@
+export const REQUEST_MOVIES = 'REQUEST_MOVIES';

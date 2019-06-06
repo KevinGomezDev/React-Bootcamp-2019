@@ -1,8 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
+import { Provider } from 'react-redux'
+import configureStore from './store/configureStore'
+
 import './App.css';
-import Home from './views/Home'
+import Home from './containers/Home'
 import Movie from './views/Movie'
 import MovieForm from './components/MovieForm'
 import { AuthProvider } from './enhancers/AuthContext'
@@ -15,12 +18,16 @@ function Routes () {
     </React.Fragment>
 }
 
+const store = configureStore()
+
 function App () {
-    return <AuthProvider value={{isAuth: true, name: 'leo'}}>
-    <Router>
-        <Routes />
-    </Router>
-    </AuthProvider>
+    return  <Provider store={store}>
+        <AuthProvider value={{isAuth: true, name: 'leo'}}>
+        <Router>
+            <Routes />
+        </Router>
+        </AuthProvider>
+    </Provider>
 }
 
 export default App

@@ -1,6 +1,4 @@
 import React from 'react';
-import moviesData from '../data/movies.json'
-
 
 import MainLayout from '../layouts/MainLayout'
 import MovieCard from '../components/MovieCard'
@@ -16,7 +14,7 @@ const WelcomeText = ({ isAuth, name }) =>
 
 class Home extends React.Component {
   state = {
-   ...moviesData,
+   //...moviesData,
   }
 
   static contextType = AuthContext
@@ -36,8 +34,9 @@ class Home extends React.Component {
 
 
     render() {
-        const { movies } = this.state
+        const { movies } = this.props
         return <div>
+          <button onClick={this.props.requestMovies}>Fetch Movies</button>
           <WelcomeText isAuth={this.context.isAuth} name={this.context.name} />
           <MainLayout>
             {movies.map((movie) => 
