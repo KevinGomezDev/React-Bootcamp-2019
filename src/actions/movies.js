@@ -25,5 +25,5 @@ export const fetchMovies = () => (dispatch) => {
         .then((movies) => {
             dispatch(receiveMovies(movies))
         })
-        .catch((err) => dispatch(catchMovies(err)));
+        .catch((err) => dispatch(catchMovies(err)))
 }

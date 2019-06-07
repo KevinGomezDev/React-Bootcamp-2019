@@ -9,6 +9,6 @@ const mapStateToProps = ({ movies }) => ({
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
     fetchMovies,
-}, dispatch);
+}, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(Movie)

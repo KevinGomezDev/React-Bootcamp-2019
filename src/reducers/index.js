@@ -5,4 +5,4 @@ import users from './users'
 export default combineReducers({ 
     movies,
     users,
-});
+})

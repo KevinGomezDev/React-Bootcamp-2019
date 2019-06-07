@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
 import MainLayout from '../layouts/MainLayout'
 import MovieCard from '../components/MovieCard'
 
 //import withAuth from '../enhancers/withAuth'
-//import AuthProvider from '../enhancers/AuthProvider.js';
+//import AuthProvider from '../enhancers/AuthProvider.js'
 import { AuthContext } from '../enhancers/AuthContext'
 
 const WelcomeText = ({ isAuth, name }) =>

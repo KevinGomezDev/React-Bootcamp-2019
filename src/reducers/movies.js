@@ -1,5 +1,5 @@
 import { REQUEST_MOVIES, RECEIVE_MOVIES, ERROR_MOVIES } from '../actions/actionTypes'
-import initialState from './initialState';
+import initialState from './initialState'
 
 export default (state = initialState.movies, action) => {
     switch(action.type) {

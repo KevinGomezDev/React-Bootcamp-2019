@@ -12,7 +12,7 @@ class MovieForm extends React.Component {
             genre: '',
             overview: '',
         }
-        this.yearRef = React.createRef();
+        this.yearRef = React.createRef()
     }
 
     handleChange = (e) => {
@@ -24,7 +24,7 @@ class MovieForm extends React.Component {
     }
 
     handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
         alert(this.state)
         this.props.onAddMovie(this.state)
     }
