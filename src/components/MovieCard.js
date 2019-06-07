@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import { Link } from 'react-router-dom'
 
 class MovieCard extends React.Component {
@@ -63,6 +65,15 @@ class MovieCard extends React.Component {
 
 MovieCard.defaultProps = {
   genre: 'comedia',
+}
+
+MovieCard.propTypes = {
+  id: PropTypes.number,
+  title: PropTypes.string,
+  year: PropTypes.string,
+  image: PropTypes.string,
+  overview: PropTypes.string,
+  deleteMovie: PropTypes.func,
 }
 
 export default MovieCard
