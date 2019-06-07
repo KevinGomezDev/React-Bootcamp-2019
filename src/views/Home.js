@@ -24,12 +24,16 @@ class Home extends React.Component {
   }
 
   deleteMovie = (movieId) => {
+    /* if you want to control logic in local state
     this.setState((state, props) => {
       const movies = state.movies.filter((movie) => movie.id !== movieId)
       return {
         movies
       }
-    })
+    }) */
+
+    // if you want to use Redux, you should do this
+    this.props.removeMovie(movieId)
   }
 
   render() {

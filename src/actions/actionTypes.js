@@ -1,6 +1,7 @@
 /* Movies ActionTypes */
 export const REQUEST_MOVIES = 'REQUEST_MOVIES'
 export const RECEIVE_MOVIES = 'RECEIVE_MOVIES'
+export const REMOVE_MOVIE = 'REMOVE_MOVIE'
 export const ERROR_MOVIES = 'ERROR_MOVIES'
 
 /* Users ActionTypes */

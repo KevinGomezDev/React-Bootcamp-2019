@@ -21,3 +21,8 @@ export const fetchMovies = () => (dispatch) => {
     .then((movies) => dispatch(receiveMovies(movies)))
     .catch((err) => dispatch(catchMovies(err)))
 }
+
+export const removeMovie = (id) => ({
+  type: 'REMOVE_MOVIE',
+  payload: { id }
+})
