@@ -1,10 +1,10 @@
 import React from 'react'
 
-function MainLayout(props) {
+function MainLayout({ content, title }) {
   return <div>
-    <h1 className='main-title'>Movie App</h1>
-    <div className='content'>
-      {props.children}
+    <h1 className='main-title'>{title}</h1>
+    <div>
+      {content}
     </div>
   </div>
 }

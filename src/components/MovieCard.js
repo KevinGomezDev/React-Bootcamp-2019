@@ -58,7 +58,7 @@ class MovieCard extends React.Component {
         <img className='overview-img' src={image} alt='Movie' />
         <p>{overview}</p>
       </div>
-      <Link to={`/movie/${id}`}>Get Detail</Link>
+      <Link className='detail-button' to={`/movie/${id}`}>Detail</Link>
     </div>
   }
 }

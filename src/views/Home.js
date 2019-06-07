@@ -39,12 +39,18 @@ class Home extends React.Component {
   render() {
     const { movies } = this.props
     return <div>
-      <button onClick={this.props.fetchMovies}>Fetch Movies</button>
       <WelcomeText isAuth={this.context.isAuth} name={this.context.name} />
-      <MainLayout>
-        {movies.data.map((movie) =>
-          <MovieCard deleteMovie={this.deleteMovie} key={movie.id} {...movie} />
-        )}
+      <MainLayout
+        title='Movies'
+        content={
+          <React.Fragment>
+            <button className='fetch-button' onClick={this.props.fetchMovies}>Fetch Movies</button>
+            <div className='movies-content'>
+              {movies.data.map((movie) =>
+                <MovieCard deleteMovie={this.deleteMovie} key={movie.id} {...movie} />
+              )}
+            </div>
+          </React.Fragment>}>
       </MainLayout>
     </div>
   }

@@ -1,6 +1,28 @@
 import React from 'react'
 import MainLayout from '../layouts/MainLayout'
 
+const ContentForm = ({
+  id,
+  title,
+  image,
+  genre,
+  overview,
+  year,
+  yearRef,
+  handleChange,
+  handleSubmit
+}) => {
+  return <form className='form' onSubmit={handleSubmit}>
+    <input value={id} name='id' placeholder='id' onChange={handleChange} />
+    <input value={title} name='title' placeholder='name' onChange={handleChange} />
+    <input ref={yearRef} value={year} name='year' placeholder='year' onChange={handleChange} />
+    <input value={image} name='image' placeholder='image' onChange={handleChange} />
+    <input value={genre} name='genre' placeholder='genre' onChange={handleChange} />
+    <input value={overview} name='overview' placeholder='overview' onChange={handleChange} />
+    <input type='submit' value="Save" />
+  </form>
+}
+
 class MovieForm extends React.Component {
   constructor(props) {
     super(props)
@@ -40,17 +62,12 @@ class MovieForm extends React.Component {
   }
 
   render() {
-    return <MainLayout>
-      <form className='form' onSubmit={this.handleSubmit}>
-        <input value={this.state.id} name='id' placeholder='id' onChange={this.handleChange} />
-        <input value={this.state.title} name='title' placeholder='name' onChange={this.handleChange} />
-        <input ref={this.yearRef} value={this.state.year} name='year' placeholder='year' onChange={this.handleChange} />
-        <input value={this.state.image} name='image' placeholder='image' onChange={this.handleChange} />
-        <input value={this.state.genre} name='genre' placeholder='genre' onChange={this.handleChange} />
-        <input value={this.state.overview} name='overview' placeholder='overview' onChange={this.handleChange} />
-        <input type='submit' value="Save" />
-      </form>
-    </MainLayout>
+    const { id, title, image, genre, overview, year } = this.state
+    const { yearRef } = this
+    return <MainLayout
+      content={React.createElement(ContentForm, { id, title, image, genre, overview, year, yearRef })}
+      title='Movie Form'
+    />
   }
 }
 
