@@ -1,17 +1,14 @@
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { fetchMovies } from '../actions/movies'
-import { requestUsers } from '../actions/users'
-import Home from '../views/Home'
+import Movie from '../views/Movie'
 
-const mapStateToProps = ({ movies, users }) => ({
+const mapStateToProps = ({ movies }) => ({
    movies,
-   users,
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-    requestUsers,
     fetchMovies,
 }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(Movie)

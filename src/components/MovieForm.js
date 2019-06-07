@@ -33,11 +33,11 @@ class MovieForm extends React.Component {
         // DONT DO IT :D
         //.document.getElementById('movieID').value = '1045'
 
-        console.log(this.yearRef.current.focus())
+        //console.log(this.yearRef.current.focus())
     }
 
     render() {
-        console.log(this.props.match.params.id)
+        //console.log(this.props.match.params.id)
         return <MainLayout>
          <form className='form' onSubmit={this.handleSubmit}>
             <input value={this.state.id} name='id' placeholder='id' onChange={this.handleChange} />

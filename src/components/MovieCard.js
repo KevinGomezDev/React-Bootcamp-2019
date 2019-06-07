@@ -9,11 +9,11 @@ class MovieCard extends React.Component {
   handleCheck = () => {
     this.setState((state, props) => ({
       checked: !state.checked
-    }), () => console.log('favourite added'))
+    }))
   }
 
   static getDerivedStateFromProps(props, state) {
-    console.log('get state from props')
+    //console.log('get state from props')
     if(props.genre === "horror") {
       return {
         checked: true,
@@ -37,7 +37,7 @@ class MovieCard extends React.Component {
   }
 
   componentWillUnmount() {
-    console.log('I will unmount')
+    //console.log('I will unmount')
   }
   
   render() {

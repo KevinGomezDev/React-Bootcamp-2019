@@ -6,7 +6,7 @@ import configureStore from './store/configureStore'
 
 import './App.css';
 import Home from './containers/Home'
-import Movie from './views/Movie'
+import Movie from './containers/Movie'
 import MovieForm from './components/MovieForm'
 import { AuthProvider } from './enhancers/AuthContext'
 

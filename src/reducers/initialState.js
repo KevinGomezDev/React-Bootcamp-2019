@@ -1,3 +1,12 @@
 export default {
-    movies: [],
+    movies: {
+        data: [],
+        isFetching : false,
+        error: null
+    },
+    users: {
+        data: [],
+        isFetching : false,
+        error: null
+    },
 }
