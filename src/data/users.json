@@ -1,33 +1,36 @@
 {
-   "users": [{
-       "id": 20001,
-        "firstname": "Leo",
-        "lastname": "Perez",
-        "email": "leo.perez@email.com",
-        "password": "cualquiera",
-        "genre": "M"
-    }, {
-        "id": 20002,
-         "firstname": "Pablo",
-         "lastname": "Perez",
-         "email": "pablo.perez@email.com",
-         "password": "cualquiera1",
-         "genre": "M"
-     },
-     {
-        "id": 20003,
-         "firstname": "Pedro",
-         "lastname": "Perez",
-         "email": "pedro.perez@email.com",
-         "password": "cualquiera3",
-         "genre": "M"
-     },
-     {
-        "id": 20004,
-         "firstname": "Leonor",
-         "lastname": "Perez",
-         "email": "leonor.perez@email.com",
-         "password": "cualquieraperofemenino",
-         "genre": "F"
-     }]
+  "users": [
+    {
+      "id": 20001,
+      "firstname": "Leo",
+      "lastname": "Perez",
+      "email": "leo.perez@email.com",
+      "password": "cualquiera",
+      "genre": "M"
+    },
+    {
+      "id": 20002,
+      "firstname": "Pablo",
+      "lastname": "Perez",
+      "email": "pablo.perez@email.com",
+      "password": "cualquiera1",
+      "genre": "M"
+    },
+    {
+      "id": 20003,
+      "firstname": "Pedro",
+      "lastname": "Perez",
+      "email": "pedro.perez@email.com",
+      "password": "cualquiera3",
+      "genre": "M"
+    },
+    {
+      "id": 20004,
+      "firstname": "Leonor",
+      "lastname": "Perez",
+      "email": "leonor.perez@email.com",
+      "password": "cualquieraperofemenino",
+      "genre": "F"
+    }
+  ]
 }

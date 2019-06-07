@@ -10,24 +10,24 @@ import Movie from './containers/Movie'
 import MovieForm from './components/MovieForm'
 import { AuthProvider } from './enhancers/AuthContext'
 
-function Routes () {
-    return <React.Fragment> 
-        <Route exact path="/" component={Home} />
-        <Route exact path="/add" component={MovieForm} />
-        <Route exact path="/movie/:id" component={Movie} />
-    </React.Fragment>
+function Routes() {
+  return <React.Fragment>
+    <Route exact path="/" component={Home} />
+    <Route exact path="/add" component={MovieForm} />
+    <Route exact path="/movie/:id" component={Movie} />
+  </React.Fragment>
 }
 
 const store = configureStore()
 
-function App () {
-    return  <Provider store={store}>
-        <AuthProvider value={{isAuth: true, name: 'leo'}}>
-        <Router>
-            <Routes />
-        </Router>
-        </AuthProvider>
-    </Provider>
+function App() {
+  return <Provider store={store}>
+    <AuthProvider value={{ isAuth: true, name: 'leo' }}>
+      <Router>
+        <Routes />
+      </Router>
+    </AuthProvider>
+  </Provider>
 }
 
 export default App

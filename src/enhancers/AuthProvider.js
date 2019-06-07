@@ -10,7 +10,7 @@ export default class AuthProvider extends React.Component {
 
   render() {
     return this.props.children({
-      isAuth : this.state.isAuth,
+      isAuth: this.state.isAuth,
       name: 'Leonardo'
     })
   }

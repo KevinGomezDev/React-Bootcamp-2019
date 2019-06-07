@@ -1,7 +1,5 @@
-import {
-    REQUEST_USERS,
-} from './actionTypes'
+import { REQUEST_USERS } from './actionTypes'
 
 export const requestUsers = () => ({
-    type: REQUEST_USERS,
+  type: REQUEST_USERS,
 })

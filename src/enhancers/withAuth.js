@@ -9,12 +9,12 @@ const withAuth = (WrappedComponent) =>
       }
     }
 
-    render () {
+    render() {
       const data = {
         ...this.props,
         isAuth: (this.state.currentUser === 'leonardo')
       }
-      return <WrappedComponent {...data } />
+      return <WrappedComponent {...data} />
     }
   }
 

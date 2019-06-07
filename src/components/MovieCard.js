@@ -13,8 +13,7 @@ class MovieCard extends React.Component {
   }
 
   static getDerivedStateFromProps(props, state) {
-    //console.log('get state from props')
-    if(props.genre === "horror") {
+    if (props.genre === "horror") {
       return {
         checked: true,
       }
@@ -22,35 +21,35 @@ class MovieCard extends React.Component {
     return null
   }
 
-  shouldComponentUpdate () {
+  shouldComponentUpdate() {
     //Remember to return true or false
     return true
   }
 
 
-  componentDidMount () {
+  componentDidMount() {
     //console.log(this.state)
   }
 
-  componentDidUpdate (prevProps, prevState) {
+  componentDidUpdate(prevProps, prevState) {
     //console.log(this.state)
   }
 
   componentWillUnmount() {
     //console.log('I will unmount')
   }
-  
+
   render() {
     const { id, title, year, image, overview, deleteMovie } = this.props
-    return <div className='movie-container'>   
-        <div className='favourite-container'>
-            <button onClick={this.handleCheck} className='favourite-button'>
-                <span className={`fa fa-star favourite-star ${this.state.checked ? 'checked': ''}`}></span>
-            </button>
-            <button onClick={() => deleteMovie(id)} className='close-button'>
-              <i className="fa fa-close"></i>
-            </button>
-        </div>
+    return <div className='movie-container'>
+      <div className='favourite-container'>
+        <button onClick={this.handleCheck} className='favourite-button'>
+          <span className={`fa fa-star favourite-star ${this.state.checked ? 'checked' : ''}`}></span>
+        </button>
+        <button onClick={() => deleteMovie(id)} className='close-button'>
+          <i className="fa fa-close"></i>
+        </button>
+      </div>
       <h1>{title}</h1>
       <div>{year}</div>
       <div className='overview-container'>
@@ -59,7 +58,7 @@ class MovieCard extends React.Component {
       </div>
       <Link to={`/movie/${id}`}>Get Detail</Link>
     </div>
-    }
+  }
 }
 
 MovieCard.defaultProps = {
