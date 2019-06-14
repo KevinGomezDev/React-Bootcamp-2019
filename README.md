@@ -33,6 +33,10 @@
 
 ## Community
 * [Reactiflux online Chat](https://discord.gg/0ZcbPKXt5bZjGY5n)
+* [React Medellín Meetup](https://www.meetup.com/es-ES/React-Medellin/)
+* [Colombia Dev](https://colombia-dev.org/) - *Slack invitation upon request*
+* [MedellinJS](https://medellinjs.org/)
+* [Facebook Developer Circle: Medellín](https://www.facebook.com/groups/325410438351996/) - *Brand new Facebook developer community*
 
 # What's next
 
